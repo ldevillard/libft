@@ -46,7 +46,8 @@ ft_putchar.c \
 ft_putstr.c \
 ft_putnbr.c \
 ft_u_itoa.c \
-get_next_line.c
+get_next_line.c \
+ft_itoa_base.c
 
 OBJS = $(SRCS:.c=.o)
 

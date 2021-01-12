@@ -6,7 +6,7 @@
 /*   By: ldevilla <ldevilla@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/11 16:31:40 by ldevilla          #+#    #+#             */
-/*   Updated: 2021/01/12 14:27:52 by ldevilla         ###   ########lyon.fr   */
+/*   Updated: 2021/01/12 14:37:50 by ldevilla         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ static char	*ft_join(char *s1, char c)
 {
 	char	*str;
 	int		i;
-	
+
 	i = 0;
 	str = 0;
 	if (!s1)
@@ -40,13 +40,13 @@ static char	*ft_join(char *s1, char c)
 	return (str);
 }
 
-int		get_next_line(char **line)
+int			get_next_line(char **line)
 {
-	char buf;
-	int i;
-	int ret;
+	char	buf;
+	int		i;
+	int		ret;
 
-	ret =  0;	
+	ret = 0;
 	if (!line)
 		return (-1);
 	if (!(*line = malloc(sizeof(char) * 1)))
@@ -60,4 +60,3 @@ int		get_next_line(char **line)
 		ret = 1;
 	return (ret);
 }
-
